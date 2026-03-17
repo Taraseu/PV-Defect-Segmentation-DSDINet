@@ -1,0 +1,44 @@
+batch_size: 16
+iters: 15000
+
+train_dataset:
+  type: Ucfel
+  dataset_root: data/ucf_el
+  transforms:
+    - type: Normalize
+    - type: ResizeStepScaling
+    - type: RandomCenterCrop
+    - type: Resize
+      target_size: [224, 224]
+    - type: RandomHorizontalFlip
+    - type: RandomVerticalFlip
+    - type: Rotation90
+    - type: RandomBlur
+      blur_type: gaussian
+    
+
+  mode: train                   
+
+val_dataset:
+  type: Ucfel
+  dataset_root: data/ucf_el
+  transforms:
+    - type: Normalize
+  mode: test
+
+
+optimizer:
+  type: SGD
+  momentum: 0.9
+  weight_decay: 4.0e-5
+
+lr_scheduler:
+  type: PolynomialDecay
+  learning_rate: 0.01
+  end_lr: 0
+  power: 0.9
+
+loss:
+  types:
+    - type: CrossEntropyLoss
+  coef: [1]
