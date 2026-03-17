@@ -8,9 +8,11 @@ This repository contains the official PaddleSeg implementation of **DSDINet**, a
 
 > **Paper Title:** DSDINet: Deep Semantic Decoupling and Integration Photovoltaic Defect Segmentation Network
 
-- **[2026-03-16]** Code and configuration files are released for review.
+**[2026-03-16]** Code and configuration files are released for review.
 
--## 🛠️ Environment Setup
+<img width="690" height="393" alt="image" src="https://github.com/user-attachments/assets/0686656a-572a-4579-84cf-a8c435525eaa" />
+
+## 🛠️ Environment Setup
 
 Please ensure you have Python 3.8+ installed. We recommend using Conda. 
 
@@ -23,7 +25,7 @@ Please ensure you have Python 3.8+ installed. We recommend using Conda.
 2. Install other dependencies:
    `pip install -r requirements.txt`
 
--## 📂 Data Preparation
+## 📂 Data Preparation
  ```
 data/
 ├── pv_defect/
@@ -34,7 +36,7 @@ data/
 │       ├── train/
 │       └── val/
  ```
-🚀 Training
+## 🚀 Training
 To train DSDINet, run the following command:
 ```
 python -m paddle.distributed.launch tools/train.py \
@@ -45,7 +47,7 @@ python -m paddle.distributed.launch tools/train.py \
        --save_dir output/test
 ```
 
-📄 Configuration
+## 📄 Configuration
 The key hyperparameters and architecture settings are defined in:
 `configs/dsdinrt/dsdinet_pscde.yml`
 
