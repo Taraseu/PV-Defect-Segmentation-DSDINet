@@ -293,7 +293,7 @@ class Focus(nn.Layer):
 
 
 @manager.MODELS.add_component     
-class ELFormer(nn.Layer):
+class DSDINet(nn.Layer):
     """
     The SegFormer implementation based on PaddlePaddle.
 
