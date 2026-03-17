@@ -24,6 +24,7 @@ Please ensure you have Python 3.8+ installed. We recommend using Conda.
    `pip install -r requirements.txt`
 
 -## 📂 Data Preparation
+ ```
 data/
 ├── pv_defect/
 │   ├── images/
@@ -32,7 +33,7 @@ data/
 │   └── labels/
 │       ├── train/
 │       └── val/
-
+ ```
 🚀 Training
 To train DSDINet, run the following command:
 ```
