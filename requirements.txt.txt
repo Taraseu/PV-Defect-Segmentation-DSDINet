@@ -1,0 +1,12 @@
+pyyaml >= 5.1
+visualdl >= 2.2.0
+opencv-python <= 4.6.0
+tqdm
+filelock
+scipy
+prettytable
+scikit-learn
+scikit-image
+paddlepaddle-cuda         11.8                
+paddlepaddle-gpu          3.0.0b1         
+paddleseg                 0.0.0.dev0
