@@ -4,7 +4,7 @@ batch_size: 4
 iters: 15000
 
 model:
-  type: ELFormer
+  type: DSDINet
   backbone:
     type: MixVisionTransformer_B1
     pretrained: https://bj.bcebos.com/paddleseg/dygraph/backbone/mix_vision_transformer_b1.tar.gz
